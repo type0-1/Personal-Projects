@@ -64,9 +64,14 @@ if guessAmount == 0:
 print(f"Would you like to see your statistics for the game? (Y/N)")
 answer = input()
 if answer == "Y" or answer == "y":
+  if win:
     print(f'User: {name} guessed {len(guessList)} times before guessing the right number.')
+    print()
+    print(f'Thank you for playing the game!')
   else:
     print(f'User: {name} guessed a total of {len(guessList)} times.')
+    print()
+    print(f'Thank you for playing the game!')
 else:
     print(f'Thank you for playing the game!')
     
